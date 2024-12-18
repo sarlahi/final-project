@@ -1,0 +1,92 @@
+:root {
+    --bg-light: #f0f0f0;
+    --bg-dark: #333;
+    --text-light: #000;
+    --text-dark: #fff;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    transition: all 0.3s;
+  }
+  
+  header {
+    text-align: center;
+    padding: 0.5%;
+    background-color: #0078d4;
+    color: white;
+  }
+  
+  main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  form input,
+  form button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  #task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+    transition: background 0.3s;
+  }
+  
+  .task-item.overdue {
+    background: #ffcccc;
+  }
+  
+  button {
+    background: #0078d4;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #0056a3;
+  }
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #842b90;
+}
+  
+  .dark-mode {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+  }
+  
+  .dark-mode main {
+    background: #444;
+  }
+  

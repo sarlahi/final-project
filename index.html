@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="app-container"></div>
+    <h1>Todo App</h1>
+  </header>
+  <main>
+    <form id="todo-form">
+      <input type="text" id="task-name" placeholder="Task Name" required>
+      <input type="date" id="due-date" required>
+      <button type="submit">Add Task</button>
+      <button id="theme-toggle">Toggle Theme</button>
+    </form>
+    <ul id="task-list"></ul>
+    <footer class="footer">
+        <p> To Do | Self Proceed</p>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
